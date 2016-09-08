@@ -1,0 +1,159 @@
+.content {
+  min-width: 1200px;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  display: flex;
+  padding-top: 100px;
+}
+.content__container {
+  width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.content__container_main-img {
+  width: 100%;
+  display: flex;
+}
+.content__container_main-img img {
+  margin: 0 auto;
+}
+.content__container_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content__container_info .img {
+  width: 40%;
+  padding-left: 5%;
+}
+.content__container_info .text {
+  width: 40%;
+  margin: 0 auto;
+}
+.content__container_info .text:nth-child(1) {
+  padding-bottom: 5%;
+}
+.content__container_info .text__big {
+  font-size: 44px;
+  -webkit-margin-after: 0.5em;
+  color: #47525d;
+  font-family: 'Baloo Chettan', cursive;
+}
+.content__container_info .text__small {
+  font-size: 25px;
+  line-height: 150%;
+  -webkit-margin-before: 0em;
+  color: #47525d;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.content__container_info .regist {
+  width: 45%;
+  margin-bottom: 1em;
+}
+.content__container_info .regist__form {
+  margin-left: 3em;
+}
+.content__container_info .regist__form_name-surname {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 1em;
+}
+.content__container_info .regist__form_email-pass {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content__container_info .regist__form_if {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content__container_info .regist__form_if p {
+  font-size: 13px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #757575;
+}
+.content__container_info .regist__form_if p a {
+  text-decoration: none;
+  color: #007ee5;
+}
+.content__container_info .regist__form_check {
+  border: 1px solid #007ee5;
+  width: 390px;
+  line-height: 5px;
+  border-radius: 4%;
+  background-color: #007ee5;
+}
+.content__container_info .regist__form_check a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.content__container_info .regist__form_check a:hover {
+  background-color: #068AF6;
+}
+.content__container_info .regist__form_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.2em;
+}
+.content__container_info .regist__form_line p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+}
+.content__container_info .regist__form_line .line-or {
+  width: 169px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+.content__container_info .regist__form_line .line-or:nth-child(1) {
+  -webkit-margin-start: 0em;
+  -webkit-margin-end: 0.5em;
+}
+.content__container_info .regist__form_line .line-or:nth-child(3) {
+  -webkit-margin-start: 0.5em;
+  -webkit-margin-end: 0em;
+}
+.content__container_info .regist__form_check-google {
+  border: 1px solid #3099f0;
+  width: 390px;
+  line-height: 5px;
+  border-radius: 4%;
+  background-color: #3099f0;
+}
+.content__container_info .regist__form_check-google a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.content__container_info .regist__form_check-google a:hover {
+  background-color: #52ADF9;
+}
+.content__container_info .regist__form .registration:nth-child(2) {
+  padding-left: 0.5em;
+}
+.content__container_info .regist__form .registration input {
+  border-radius: 4%;
+  border: 1px solid #a2a2a2;
+  width: 180px;
+  height: 35px;
+  padding-left: 10px;
+}

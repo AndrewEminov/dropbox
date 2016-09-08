@@ -1,0 +1,162 @@
+@textbig-font: 'Baloo Chettan', cursive;
+@textsmall-font: 'Source Sans Pro', sans-serif;
+@checkG-color: #3099F0;
+@check-color: #007ee5;
+@text-color:#47525d;
+
+.flex(@direction: column; @align: flex-start; @justify: flex-start){
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+}
+.block-cover(){
+  width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.contant{
+  min-width:1200px;
+  margin: 0 auto;
+  background-color: rgb(251,251,251);
+  display: flex;
+  padding-top: 100px;
+  &__container{
+    width: 1200px;
+    .block-cover();
+    &_main-img{
+      width: 100%;
+      display: flex;
+      img{
+        margin: 0 auto;
+      }
+    }
+    &_info{
+      .flex(row; center);
+      .img{
+        width: 40%;
+        padding-left: 5%
+      }
+      .text{
+        width: 40%;
+        margin: 0 auto;
+        &:nth-child(1){
+          padding-bottom: 5%;
+        }
+        &__big{
+          font-size: 44px;
+          -webkit-margin-after: 0.5em;
+          color: @text-color;
+          font-family: @textbig-font;
+        }
+        &__small{
+          font-size: 25px;
+          line-height: 150%;
+          -webkit-margin-before: 0em;
+          color: @text-color;
+          font-family: @textsmall-font;
+        }
+      }
+      .regist{
+        width: 45%;
+        margin-bottom: 1em;
+        // форма
+        &__form{
+        margin-left: 3em;
+          &_name-surname{
+            .flex(row);
+            padding-bottom: 1em;
+
+          }
+          &_email-pass{
+            .flex(row);
+
+          }
+
+          &_if{
+            .flex(row; center);
+            p{
+              font-size: 13px;
+              font-family: 'Titillium Web', sans-serif;
+              color: rgb(117,117,117);
+              a{
+                text-decoration: none;
+                color: @check-color;
+              }
+            }
+          }
+          &_check{
+            border: 1px solid @check-color;
+            width: 390px;
+            line-height: 5px;
+            border-radius: 4%;
+            background-color: @check-color;
+            a{
+              text-decoration: none;
+              .flex(column; center);
+              color: white;
+              font-family: @textsmall-font;
+              &:hover{
+                background-color: #068AF6;
+              }
+            }
+          }
+          &_line{
+            .flex(row; center);
+            padding-left: 0.2em;
+            p{
+              font-family: 'Titillium Web', sans-serif;
+              font-size: 12px;
+            }
+            .line-or{
+              width: 169px;
+              -webkit-margin-before: 0em;
+              -webkit-margin-after: 0em;
+              &:nth-child(1){
+                -webkit-margin-start: 0em;
+                -webkit-margin-end: 0.5em;
+              }
+              &:nth-child(3){
+                -webkit-margin-start: 0.5em;
+                -webkit-margin-end: 0em;
+              }
+            }
+          }
+
+          &_check-google{
+            border: 1px solid @checkG-color;
+            width: 390px;
+            line-height: 5px;
+            border-radius: 4%;
+            background-color: @checkG-color;
+            a{
+              text-decoration: none;
+              .flex(column; center);
+              color: white;
+              font-family: @textsmall-font;
+              &:hover{
+                background-color: #52ADF9;
+              }
+            }
+          }
+          .registration{
+            &:nth-child(2){
+              padding-left: 0.5em;
+            }
+            input{
+              border-radius: 4%;
+              border: 1px solid rgb(162,162,162);
+              width: 180px;
+              height: 35px;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
